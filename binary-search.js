@@ -9,7 +9,7 @@ function binarySearch(arr, target) {
   // While high and low indices do not overlap...
 while(low <= high) {
 
-  let mid = Math.floor(high + low / 2);
+  let mid = Math.floor((high + low) / 2);
   if(arr[mid] === target) return mid;
   else if(target > arr[mid]) {
     low = mid + 1;
